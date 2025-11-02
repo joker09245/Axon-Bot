@@ -36,12 +36,10 @@ async def on_ready():
     
     print("""
            \033[1;31m
-
- ▄████▄   ▒█████  ▓█████▄ ▓█████ ▒██   ██▒
-▒██▀ ▀█  ▒██▒  ██▒▒██▀ ██▌▓█   ▀ ▒▒ █ █ ▒░
-▒▓█    ▄ ▒██░  ██▒░██   █▌▒███   ░░  █   ░
-▒▓▓▄ ▄██▒▒██   ██░░▓█▄   ▌▒▓█  ▄  ░ █ █ ▒ 
-▒ ▓███▀ ░░ ████▓▒░░▒████▓ ░▒████▒▒██▒ ▒██▒
+▒▓█   ▒█████  ▓██
+▒▓█  ▒▓▄  ██▒░██ ▄▒▓▓█  █▌▒███   ░░  █   ░
+▒▒█▒▒██   ██░░▓█▄   ▌▒▓█  ▄  ░ █ █ ▒ 
+ ▄█ ░░ ████▓▒░░▒████▓ ░▒████▒▒██▒ ▒██▒
 ░ ░▒ ▒  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░░ ▒░ ░▒▒ ░ ░▓ ░
   ░  ▒     ░ ▒ ▒░  ░ ▒  ▒  ░ ░  ░░░   ░▒ ░
 ░        ░ ░ ░ ▒   ░ ░  ░    ░    ░    ░  
@@ -99,7 +97,7 @@ async def on_command_completion(context: commands.Context) -> None:
                     inline=False)
 
                 embed.timestamp = discord.utils.utcnow()
-                embed.set_footer(text="Quantum X Development™ ❤️",
+                embed.set_footer(text="Joker Development™ ❤️",
                                  icon_url=client.user.display_avatar.url)
                 await webhook.send(embed=embed)
             except Exception as e:
@@ -121,7 +119,7 @@ async def on_command_completion(context: commands.Context) -> None:
                     name=" Command Executed By :",
                     value=f"{context.author} | ID: [{context.author.id}](https://discord.com/users/{context.author.id})",
                     inline=False)
-                embed1.set_footer(text=f"Powered by Quantum X Development™",
+                embed1.set_footer(text=f"Powered by Joker Development™",
                                   icon_url=client.user.display_avatar.url)
                 await webhook.send(embed=embed1)
             except Exception as e:
